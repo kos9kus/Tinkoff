@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="externalId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="partnerName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="partner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Partner" inverseName="item" inverseEntity="Partner" syncable="YES"/>
+    </entity>
+    <entity name="Partner" representedClassName="Partner" syncable="YES">
+        <attribute name="depositionDuration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionItem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasLocations" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="idItem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isMomentary" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="limitations" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="item" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="partner" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Item" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Partner" positionX="-54" positionY="-9" width="128" height="195"/>
+    </elements>
+</model>
