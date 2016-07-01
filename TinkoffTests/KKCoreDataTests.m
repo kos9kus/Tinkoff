@@ -47,7 +47,7 @@
     XCTAssert([partner.idItem isEqualToString:@"Kostya"]);
 }
 
-- (void)testPutItemVieDictionery {
+- (void)testPutItemViaDictionery {
     NSDictionary *dic = @{ @"externalId": @"M021", @"partnerName" : @"EUROSET" };
     Item *itemEntity = [Item mapFromDictionary:dic intoContext:ds.cdBackGroundContext];
     

@@ -46,7 +46,7 @@
 - (void)testMakeRequestWithPositionPartner {
     [m makeRequestWithPosition:KKPositionMake(55.755786, 37.617633, 1000) forPartner:@"EUROSET"];
     [self waitForExpectationsWithTimeout:5.0 handler:^(NSError *error) {
-        if(error) {
+        if (error) {
             XCTFail(@"Expectation Failed with error: %@", error);
         }
     }];

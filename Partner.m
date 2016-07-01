@@ -10,7 +10,7 @@
 #import "Item.h"
 #import "KKCoreDataStack.h"
 
-static NSString *kEntityName = @"Partner";
+static NSString* const kEntityName = @"Partner";
 
 @implementation Partner
 

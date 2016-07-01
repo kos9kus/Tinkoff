@@ -94,7 +94,7 @@
     NSDictionary* items = [NSJSONSerialization JSONObjectWithData:data
                                                      options:NSJSONReadingMutableContainers
                                                        error:&err];
-//    NSLog(@"Imported Banks: %@", items);
+    NSLog(@"Imported Banks: %@", items);
     if (!err) {
         if ([self.delegate respondsToSelector:@selector(didLoadItemsKKNetworkManager:withArray:)]) {
             [self.delegate didLoadItemsKKNetworkManager:self withArray:items];

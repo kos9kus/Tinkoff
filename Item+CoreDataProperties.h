@@ -13,8 +13,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-static const NSString *klatitude = @"latitude";
-static const NSString *klongitude = @"longitude";
+static NSString * const klatitude = @"latitude";
+static NSString* const klongitude = @"longitude";
 
 @interface Item (CoreDataProperties)
 

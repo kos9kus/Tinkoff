@@ -14,6 +14,6 @@ typedef struct {
     int radius;
 } KKPosition;
 
-KKPosition KKPositionMake(double latitude, double longitude, double r);
+KKPosition KKPositionMake(double latitude, double longitude, int r);
 NSPredicate* createPredicateWIthRadius(KKPosition position);
 NSPredicate* createPredicateWIthRadius_2(KKPosition position);

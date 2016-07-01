@@ -10,7 +10,7 @@
 
 @class Item;
 
-static NSString *idKKDetailedViewControllerStoryBoard = @"KKDetailedViewControllerSBId";
+static NSString* const idKKDetailedViewControllerStoryBoard = @"KKDetailedViewControllerSBId";
 
 @interface KKDetailedViewController : UIViewController
 

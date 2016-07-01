@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-static const NSString *kIdItem = @"idItem";
+static NSString* const kIdItem = @"idItem";
 
 @interface Partner (CoreDataProperties)
 

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "KKPosition.h"
 
-KKPosition KKPositionMake(double latitude, double longitude, double r) {
+KKPosition KKPositionMake(double latitude, double longitude, int r) {
     KKPosition p;
     p.latitude = latitude;
     p.longitude = longitude;

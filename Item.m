@@ -12,7 +12,7 @@
 
 @import CoreLocation;
 
-static NSString *kEntityName = @"Item";
+static NSString* const kEntityName = @"Item";
 
 @implementation Item
 

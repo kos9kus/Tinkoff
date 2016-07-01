@@ -27,7 +27,6 @@
 @property (nonatomic, strong) NSOperationQueue *queue;
 
 @property (strong, nonatomic) IBOutlet MKMapView *map;
-@property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSMutableArray <KKAnnotation*> *points;
 @property (nonatomic, strong) Item *selectedItem;
 
@@ -60,11 +59,11 @@
 }
 
 - (void)locationAuthorization {
-    self.locationManager = [CLLocationManager new];
+    CLLocationManager *locationManager = [CLLocationManager new];
     if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse) {
         self.map.showsUserLocation = YES;
     } else {
-        [self.locationManager requestWhenInUseAuthorization];
+        [locationManager requestWhenInUseAuthorization];
     }
 }
 
@@ -109,6 +108,7 @@
             KKAnnotation *a = [[KKAnnotation alloc] initWithLocation:position item:objItem];
             [self.points addObject:a];
         }
+        
         [self.map addAnnotations:self.points];
     }
 }
@@ -118,7 +118,7 @@
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated {
     MKCoordinateRegion changedRegion = mapView.region;
     
-    double radius = changedRegion.span.latitudeDelta * 111 * 500;
+    float radius = changedRegion.span.latitudeDelta * 111 * 500;
     NSLog(@"%f", radius);
     KKPosition pos = KKPositionMake(changedRegion.center.latitude, changedRegion.center.longitude, radius);
     [self fetchData:pos];

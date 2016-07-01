@@ -99,6 +99,7 @@ public extension UIDevice {
         if let model = modelMap[String.fromCString(modelCode!)!] {
             return model
         }
+        
         return Model.unrecognized
     }
     
@@ -118,7 +119,7 @@ public extension UIDevice {
         return .GenerationTablet
     }
     
-    func dpiType() -> KKOperationImageType {
+    public func dpiType() -> KKOperationImageType {
         switch self.compoundedType {
         case .Generation5:
             return .HDPI
