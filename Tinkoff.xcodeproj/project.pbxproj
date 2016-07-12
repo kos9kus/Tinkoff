@@ -33,6 +33,7 @@
 		835BC61F1D244E660009C27F /* KKOperationImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 835BC61E1D244E660009C27F /* KKOperationImageTests.m */; };
 		835BC6221D24853C0009C27F /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BC6211D24853C0009C27F /* UIDeviceExtension.swift */; };
 		835BC6251D24949A0009C27F /* KKDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835BC6241D24949A0009C27F /* KKDetailedViewController.m */; };
+		83A95C171D35A6C50004FB2A /* KKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A95C161D35A6C50004FB2A /* KKTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		835BC6211D24853C0009C27F /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		835BC6231D24949A0009C27F /* KKDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDetailedViewController.h; sourceTree = "<group>"; };
 		835BC6241D24949A0009C27F /* KKDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDetailedViewController.m; sourceTree = "<group>"; };
+		83A95C151D35A6C50004FB2A /* KKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTableViewController.h; sourceTree = "<group>"; };
+		83A95C161D35A6C50004FB2A /* KKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 				8354CC4A1D21F6AB006B34A0 /* KKPosition.m */,
 				835BC6231D24949A0009C27F /* KKDetailedViewController.h */,
 				835BC6241D24949A0009C27F /* KKDetailedViewController.m */,
+				83A95C151D35A6C50004FB2A /* KKTableViewController.h */,
+				83A95C161D35A6C50004FB2A /* KKTableViewController.m */,
 				835BC6211D24853C0009C27F /* UIDeviceExtension.swift */,
 				8354CC051D1ECD70006B34A0 /* Main.storyboard */,
 				8354CC081D1ECD70006B34A0 /* Assets.xcassets */,
@@ -320,6 +325,7 @@
 				8354CC241D1ECD98006B34A0 /* CDModel.xcdatamodeld in Sources */,
 				835BC6251D24949A0009C27F /* KKDetailedViewController.m in Sources */,
 				8354CC401D202FB5006B34A0 /* Partner+CoreDataProperties.m in Sources */,
+				83A95C171D35A6C50004FB2A /* KKTableViewController.m in Sources */,
 				8354CC4E1D21FC7F006B34A0 /* KKDataManager.m in Sources */,
 				835BC61D1D2447740009C27F /* KKOperationImage.m in Sources */,
 				8354CC411D202FB5006B34A0 /* Partner.m in Sources */,
